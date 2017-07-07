@@ -64,7 +64,7 @@ namespace RestClient
                 {
                     var all_trades = await response.Content.ReadAsAsync<IList<Trade>>();
                     if (all_trades == null)
-                        Console.WriteLine("all_trades null");
+                        Console.WriteLine("all_trades is null");
                     else
                     {
                         foreach (var t in all_trades)
